@@ -146,7 +146,7 @@ $Summary = ForEach ($RandomUser in $RandomUsers)
     "Path"                  = $OU
   }
 
-  New-ADUser @NewADUsersParam -Verbose -WhatIf
+  New-ADUser @NewADUsersParam -Verbose
 
   [PSCustomObject]@{
     Name           = $NewADUsersParam.Name
